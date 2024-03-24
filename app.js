@@ -7,7 +7,7 @@ function mailmeotp(userEmail) {
     port: 465,
     secure: true,
     auth: {
-      user: "pranav2000verma@gmail.com",
+      user: "guptapulkitgupta003@gmail.com",
       pass: process.env.PASS,
     },
   });
@@ -18,7 +18,7 @@ function mailmeotp(userEmail) {
   }
   const newOTP = makeMyOTP();
   const mail = {
-    from: "pranav2000verma@gmail.com",
+    from: "guptapulkitgupta003@gmail.com",
     to: userEmail,
     subject: "Verify Your Account",
     text: "here is your otp to verify your sign in on myApp: " + newOTP,
